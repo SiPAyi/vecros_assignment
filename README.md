@@ -47,10 +47,8 @@ A* algorithm finds the shortest path between two points by combining actual cost
 ![A* output](path_planning/astar.png)
 
 #### RRT* (Rapidly-exploring Random Tree Star)
-It is an improved version of RRT used for path planning. It grows a tree by randomly sampling points and connecting them to the nearest node, optimizing the path by rewiring nodes for lower costs. Unlike RRT, RRT* ensures the path is both feasible and as close to optimal as possible. It’s commonly used in robotics for navigation in complex environments. checkout the [rrtstar_planning.py](path_planning/rrtstar_planning.py) file
+It is an improved version of RRT used for path planning. It grows a tree by randomly sampling points and connecting them to the nearest node, optimizing the path by rewiring nodes for lower costs. Unlike RRT, RRT* ensures the path is both feasible and as close to optimal as possible. It’s commonly used in robotics for navigation in complex environments. checkout the [rrtstar_planning.py](path_planning/rrtstar_planning.py) and [rrtstar_by_me.py](path_planning/rrtstar_by_me.py) files, i didn't tested them, but they are not completed
 
-*Figure: RRR-star Ouput*
-![RRR* output](path_planning/rrtstar.png)
 
 ### My Approach
 The algorithm I tried(without using chatgpt or any resource) is close to A* or Dijkstra algorithms, its searching for the endpoint moving across the grid, even it finds the solution, its exploring the total grid for different paths and selecting the sortest paths from all of them. checkout the [my_planning.py](path_planning/my_planning.py) file
@@ -72,6 +70,7 @@ In my point of view RRT* algorithms is best to find the path in 3D grid(as per p
 ## 2. Waypoint Navigation
 
 to be updated
+
 
 
 
